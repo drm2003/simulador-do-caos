@@ -7,3 +7,6 @@ COPY . .
 RUN npm run compile
 EXPOSE 3000
 CMD ["npm", "start"]
+
+# docker build -f Dockerfile -t danielucb/simulador-do-caos:v1 .
+# docker run -dti --name simulador-do-caos -p 8080:3000 danielucb/simulador-do-caos:v1

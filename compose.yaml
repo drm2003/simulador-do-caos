@@ -1,0 +1,8 @@
+services:
+  web:
+    image: danielucb/simulador-do-caos:v1
+    ports:
+      - 8080:8080
+    restart: always
+
+# docker compose up -d
