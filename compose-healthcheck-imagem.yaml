@@ -1,0 +1,12 @@
+services:
+  web:
+    # sem healtcheck na imagem
+    #image: danielucb/simulador-do-caos:v1
+    # com healtcheck
+    image: danielucb/simulador-do-caos:v2
+    ports:
+      - 8080:3000
+    restart: always
+
+
+# docker compose -f cursos/devops-pro-aulas/exercicios/simulador-do-caos/compose-healthcheck-imagem.yaml up -d
